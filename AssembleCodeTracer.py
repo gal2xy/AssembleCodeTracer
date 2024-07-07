@@ -389,7 +389,7 @@ def analyzeInstruction(instruction: str):
                 defSet, useSet = getDefAndUseSet(CorresInsnsDic, operands)
             else:
                 defSet, useSet = getDefAndUseSet(insnsDic, operands)
-            # 需要存储的是全称寄存器或者是寄存器编号!!!!!!
+
             return defSet, useSet
 
     print(f'Warning!!! Unknow instruction: {instruction}. You need define it in instructions_db')
